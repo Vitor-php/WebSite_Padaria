@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Encomendar Bolo</title>
+    </head>
+    <body><header>
+        
+        <h1>Pães, Doces e Bolos</h1>
+
+        <ul>
+            <li>
+                <a href="../Index.htmls">Página Inicial</a></li>
+
+               <li> <a href="Index_Encomendas.html.html"
+                >Encomendar Bolo</a> </li>
+
+        </ul>
+
+        <main>
+
+            <h2>Encomendar Bolo</h2>
+
+            <form method="GET">
+
+            Nome: <input type="text" name="nome_usuario" size="35" maxlength="35" placeholder="Insira o nome" autofocus/>
+
+            DDD: <input type="text" name="DDD_usuario" size="2" maxlength="2" placeholder="DDD" />
+
+            Telefone: <input type="text" name="telefone_usuario" size="10" maxlength="10" placeholder="Telefone" />
+
+            <br /><br />
+
+            <table border="1">
+
+                <caption>Bolos</caption>
+<tr>
+                <td><img src= "../Imagens/Bolo01.png" alt="Bolo de Chocolate" width="200"></td>
+                <td><img src= "../Imagens/Bolo02.png" alt="Bolo de Frutas" width="200"></td>
+                <td><img src= "../Imagens/Bolo03.png" alt="Bolo Misto" width="200"></td>
+</tr>
+
+<tr>
+<th>Chocolate</th>
+<th>Frutas</th>
+<th>Misto</th>
+
+</tr>
+
+
+              </table>
+
+              <br/><br/>
+
+              Sabor: <select name="Sabor" required>
+                    <option value="0" disabled selected > Escolha...</option>
+                <option>Chocolate</option>
+                <option>Frutas</option>
+                <option>Misto</option>
+
+                </select>
+                
+                
+
+                Tipo: <input type="radio" name="radio"/>Simples
+
+                    <input type="radio" name="radio"/>Decorado
+
+                </select>
+
+                <br /><br />
+
+                Tamanho: <input type="number" name="tamanho_bolo" min="1" max="10" >kg
+
+                <input type="checkbox" name="diet_bolo" value="sim">Diet?
+
+                <br/><br/>
+
+                Observações: <br/>
+                <textarea name="observacoes_pedido" rows="3" cols="80" placeholder="Observações sobre o pedido"></textarea>
+
+                   <br/><br/>
+
+                <input type="submit" value="Enviar Pedido">
+
+                <input type="reset"  value="Limpar Pedido">
+            
+        </form>
+
+    </header>
+
+        </main>
+    
+    
+        
+    </body>
+    
+</html>
